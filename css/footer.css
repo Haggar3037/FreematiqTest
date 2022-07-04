@@ -1,0 +1,27 @@
+.footer {
+  border-top: 1px solid #DBDBDB;
+}
+.footer__container {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 56px;
+  flex-wrap: wrap;
+}
+.footer__container__info {
+  margin: 10px 50px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #818D9C;
+}
+.footer__container__info__linck {
+  color: #489AFF;
+}
+.footer__container__info__linck:hover {
+  text-decoration: underline;
+}
