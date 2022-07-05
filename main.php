@@ -86,13 +86,13 @@
                             <input type="radio" id="level-Intern" name="level" value="Intern" class="rating__selection__visualization__level__radio">
                     </li>
                     <li class="rating__selection__visualization__level">
-                            <input type="radio" id="level-Junior" name="level" value="Junior" class="rating__selection__visualization__level__radio">
+                            <input type="radio" id="level-Junior" name="level" value="Junior" class="rating__selection__visualization__level__radio"  checked>
                     </li>
                     <li class="rating__selection__visualization__level">
                             <input type="radio" id="level-Middle" name="level" value="Middle" class="rating__selection__visualization__level__radio">
                     </li>
                     <li class="rating__selection__visualization__level">
-                            <input type="radio" id="level-Senio" name="level" value="Senio" class="rating__selection__visualization__level__radio" checked>
+                            <input type="radio" id="level-Senio" name="level" value="Senio" class="rating__selection__visualization__level__radio">
                     </li>
                     <li class="rating__selection__visualization__level">
                             <input type="radio" id="level-Lead" name="level" value="Lead" class="rating__selection__visualization__level__radio">

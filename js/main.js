@@ -12,21 +12,24 @@ document.addEventListener('DOMContentLoaded', function() {
 }, false);  
 
 function selectionDown () {
-    let selectionElement = document.querySelector('.rating__selection__visualization');
-    selectionElement.addEventListener('mousemove', transferCheck);
+    let selectionBlock = document.querySelector('.rating');
+    selectionBlock.addEventListener('mousemove', transferCheck);
 }
 
 function  selectionUp () {
     let selectionElement = document.querySelector('.rating__selection__visualization');
+    let selectionBlock = document.querySelector('.rating');
     let levelRadio = document.querySelectorAll('.rating__selection__visualization__level__radio');
 
-    selectionElement.removeEventListener('mousemove', transferCheck);
+    selectionBlock.removeEventListener('mousemove', transferCheck);
+    selectionBlock.removeEventListener('mouseout', selectionUp);
+    window.removeEventListener('mouseup', selectionUp);
+
 
     let position = parseInt(selectionElement.style.getPropertyValue('--selecti-position') + "px");
     let positionSum = levelRadio.length -1;
     let selectionWidth = selectionElement.offsetWidth;
     let positionNum = Math.round(position/(selectionWidth/positionSum));
-    console.log(positionNum);
 
     for(i = 0; i <= positionSum; i++) {
         if(levelRadio[i].checked) {
@@ -38,8 +41,8 @@ function  selectionUp () {
                 levelRadio[i].checked = true;
             }
         }
-        
     }
+
     levelCheck ();
 }
 
@@ -47,14 +50,18 @@ function transferCheck (e) {
     let position = 0;
     let selectionElement = document.querySelector('.rating__selection__visualization');
     let selectionElementPosition =  selectionElement.getBoundingClientRect();
+    let selectionBlock = document.querySelector('.rating');
+
+
     position = e.pageX - selectionElementPosition.left;
     if(position>=0 && position <= selectionElement.offsetWidth) {
         selectionElement.style.setProperty('--selecti-position', position + "px");
         selectionElement.style.setProperty('--gardient-position',  selectionElement.offsetWidth - position + "px");
     }
+
+    selectionBlock.addEventListener('mouseout', selectionUp);
     window.addEventListener('mouseup', selectionUp);
 }
-
 
 function levelCheck () {
     let levelRadio = document.querySelectorAll('.rating__selection__visualization__level__radio');
