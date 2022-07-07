@@ -1,0 +1,38 @@
+.not-found {
+    min-height: 100vh;
+    text-align: center;
+    margin-bottom: 265px;
+    &__img {
+        margin-top: 282px;
+    }
+
+    &__title {
+        margin-top: 23px;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        color: #405063;
+    }
+
+    &__inform {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 19px;
+        color: #818D9C;
+        max-width: 510px;
+        margin: 10px auto 0px auto;
+    }
+
+    &__button {
+        margin-top: 15px;
+        background: #489AFF;
+        border-radius: 500px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding: 14px 31px 12px 31px;
+        border: none;
+    }
+}

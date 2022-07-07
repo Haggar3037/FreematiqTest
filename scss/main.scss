@@ -43,6 +43,7 @@ $secondaryСolor: #818D9C;
 .main {
     background: url(/img/backgroundImage.svg)  no-repeat right top;
     overflow: hidden;
+
     &__container {
         max-width: 1150px;
         width: 100%;
@@ -53,7 +54,6 @@ $secondaryСolor: #818D9C;
 .welcome-block {
     display: flex;
     min-height: 100vh;
-
     box-sizing: border-box;
 
     &__text {
@@ -699,10 +699,9 @@ $secondaryСolor: #818D9C;
     padding-top: 10px;
     margin-top: 80px;
     text-align: center;
-    margin-bottom: 100px;
 
     &__title {
-        margin-top: 12px;
+        margin: 12px;
         font-weight: 400;
         font-size: 30px;
         line-height: 35px;
@@ -731,7 +730,7 @@ $secondaryСolor: #818D9C;
             .column1 {
                 padding-left: 20px;
                 text-align: start;
-                width: 30%;
+                width: 31%;
             }
 
             .column2 {
@@ -783,23 +782,42 @@ $secondaryСolor: #818D9C;
     }
 }
 
+.ready-block {
+    text-align: center;
+    margin: 174px 0 164px;
 
+    &__tatle {
+        margin-top: 6px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 35px;
+        color: $mainColor;
+    }
 
+    &__inform {
+        max-width: 620px;
+        margin: 14px auto 0 auto;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 19px;
+        color: $secondaryСolor;
+    }
 
-
-
-
-
-
-
-
+    &__mail {
+        margin-top: 13px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+        color: #489AFF;
+    }
+}
 
 
 @media (max-width: 768px) {
     .main {
         background-size: 100%;
         &__container {
-            padding:  0 50px;
+            padding:  0 25px;
         }
     }
     .welcome-block {

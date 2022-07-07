@@ -59,8 +59,8 @@
                 <span class="smail">&#128640</span>
                 <h3 class="figma-boost__text-container__title">Как ускорить процесс</h3>
                 <p class="figma-boost__text-container__info">
-                    Чтобы иметь доступ ко всем функциям и возможностям Figma,
-                     которые облегчат и ускорят процесс верстки, зарегистрируйся и залогинься в системе.
+                    Чтобы иметь доступ ко всем функциям и возможностям Figma, 
+                    которые облегчат и ускорят процесс верстки, зарегистрируйся и залогинься в системе.
                 </p>
                 <button   onclick="window.location.href = 'https://figma.com';" class="figma-boost__text-container__button button" >Зарегистрироваться</button>
             </div>
@@ -440,18 +440,15 @@
                 </tr>
             </table>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
+        <div class="ready-block">
+            <span class="smail">&#9993</span>
+            <h3 class="ready-block__tatle">Всё готово? Высылай нам!</h3>
+            <p class="ready-block__inform">
+                Когда всё будет готово, высылай архив с версткой или ссылку на облачный 
+                файл на нашу почту, указав тему письма “Тестовое задание для верстальщиков”.
+            </p>
+            <p class="ready-block__mail">hr@freematiq.com</p>
+        </div>
     </div>
 </div>
 <script src="/js/main.js"></script>
