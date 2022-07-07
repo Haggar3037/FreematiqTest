@@ -1,4 +1,7 @@
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
+
 
 <div class="main">
     <div class="main__container">
@@ -71,13 +74,13 @@
                 </p>
             </div>
             <div class="rating__amount">
-                <div class="rating__amount__years">
-                    <div class="rating__amount__number">1</div>
-                    <div class="rating__amount__name">Год</div>
+                <div class="rating__amount__years rating__amount__container">
+                    <div class="rating__amount__container__number">1</div>
+                    <div class="rating__amount__container__name">Год</div>
                 </div>
-                <div class="rating__amount__projects">
-                    <div class="rating__amount__number">1</div>
-                    <div class="rating__amount__name">Проект</div>
+                <div class="rating__amount__projects rating__amount__container">
+                    <div class="rating__amount__container__number">1</div>
+                    <div class="rating__amount__container__name">Проект</div>
                 </div>
             </div>
             <div class="rating__selection">
@@ -107,8 +110,336 @@
                 </ul>
             </div>
         </div>
-
-
+        <div class="slider">
+            <div class="slider__text">
+                <span class="smail">&#128588</span>
+                <h3 class="slider__text__title">Сверстаешь такой слайдер?</h3>
+                <p class="slider__text__info">
+                    Это не так сложно, на самом деле. Сложнее придумать как он будет адаптироваться. 
+                    Различные модные эффекты так же будут оценены по достоинству.
+                </p>
+            </div>
+            <div class="slider__container">
+                <div class="slider__navigation">
+                    <img src="/img/cardBackground.png" alt="" class="slider__navigation__background">
+                    <button class="slider__navigation__arrowRigth"></button>
+                    <button class="slider__navigation__arrowLeft"></button>
+                    <div class="slider__navigation__posotion">
+                        <div class="slider__navigation__posotion__this" id="slideNavThis">01</div>
+                        <div class="slider__navigation__posotion__all" id="slideNavAll">/ 03</div>
+                    </div>
+                </div>
+                <div class="slider__cardBox">
+                    <div class="slider__cardBox__card" id="card-1">
+                        <input type="checkbox" class="slider__cardBox__card__likeCheckbox" id="card-1-like">
+                        <label for="card-1-like" class="slider__cardBox__card__like"> </label>
+                        <img src="img/cardImg/card1.png" alt="" class="slider__cardBox__card__img">
+                        <h4 class="slider__cardBox__card__title">New Balance 840 90s</h4>
+                        <p class="slider__cardBox__card__info">840 90s Running объединили в себе спортивную эстетику и необходимый в городском ритме комфорт.</p>
+                        <div class="slider__cardBox__card__priseBox">
+                            <p class="slider__cardBox__card__priseBox__prise">10 990 ₽</p>
+                            <p class="slider__cardBox__card__priseBox__discount">12 990 ₽</p>
+                        </div>
+                        <ul class="slider__cardBox__card__colorBox">
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <p class="slider__cardBox__card__element__colorText">Цвет:</p>
+                            </li>
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <input name="color1" type="radio" id="card-1-red" class="slider__cardBox__card__colorBox__element__radio">
+                                <label for="card-1-red" class="slider__cardBox__card__colorBox__element__label radio_red"></label>
+                            </li>
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <input name="color1" type="radio" id="card-1-blue" class="slider__cardBox__card__colorBox__element__radio">
+                                <label for="card-1-blue" class="slider__cardBox__card__colorBox__element__label  radio_blue"></label>
+                            </li>
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <input name="color1" type="radio" id="card-1-orange" class="slider__cardBox__card__colorBox__element__radio">
+                                <label for="card-1-orange" class="slider__cardBox__card__colorBox__element__label  radio_orange"></label>
+                            </li>
+                        </ul>
+                        <input type="checkbox" class="slider__cardBox__card__bay" id="card-1-bay">
+                        <label for="card-1-bay" class="slider__cardBox__card__bayLabel"></label>
+                    </div>
+                    <div class="slider__cardBox__card" id="card-2">
+                        <input type="checkbox" class="slider__cardBox__card__likeCheckbox" id="card-2-like">
+                        <label for="card-2-like" class="slider__cardBox__card__like"> </label>
+                        <img src="img/cardImg/card2.png" alt="" class="slider__cardBox__card__img">
+                        <h4 class="slider__cardBox__card__title">New Balance 1500</h4>
+                        <p class="slider__cardBox__card__info">Встречайте новые расцветки бессмертной классики!</p>
+                        <div class="slider__cardBox__card__priseBox">
+                            <p class="slider__cardBox__card__priseBox__prise">13 990 ₽</p>
+                            <p class="slider__cardBox__card__priseBox__discount">19 990 ₽</p>
+                        </div>
+                        <ul class="slider__cardBox__card__colorBox">
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <p class="slider__cardBox__card__element__colorText">Цвет:</p>
+                            </li>
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <input name="color2" type="radio" id="card-2-violet" class="slider__cardBox__card__colorBox__element__radio">
+                                <label for="card-2-violet" class="slider__cardBox__card__colorBox__element__label radio_violet"></label>
+                            </li>
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <input name="color2" type="radio" id="card-2-black" class="slider__cardBox__card__colorBox__element__radio">
+                                <label for="card-2-black" class="slider__cardBox__card__colorBox__element__label  radio_black"></label>
+                            </li>
+                        </ul>
+                        <input type="checkbox" class="slider__cardBox__card__bay" id="card-2-bay">
+                        <label for="card-2-bay" class="slider__cardBox__card__bayLabel"></label>
+                    </div>
+                    <div class="slider__cardBox__card" id="card-3">
+                        <input type="checkbox" class="slider__cardBox__card__likeCheckbox" id="card-3-like">
+                        <label for="card-3-like" class="slider__cardBox__card__like"> </label>
+                        <img src="img/cardImg/card3.png" alt="" class="slider__cardBox__card__img">
+                        <h4 class="slider__cardBox__card__title">New Balance 997H</h4>
+                        <p class="slider__cardBox__card__info">В 1991 году New Balance представил миру модель 997, которая вывела линейку 99X на совершенно новый уровень технологий и эстетики</p>
+                        <div class="slider__cardBox__card__priseBox">
+                            <p class="slider__cardBox__card__priseBox__prise">10 990 ₽</p>
+                            <p class="slider__cardBox__card__priseBox__discount">12 990 ₽</p>
+                        </div>
+                        <ul class="slider__cardBox__card__colorBox">
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <p class="slider__cardBox__card__element__colorText">Цвет:</p>
+                            </li>
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <input name="color3" type="radio" id="card-3-pink" class="slider__cardBox__card__colorBox__element__radio">
+                                <label for="card-3-pink" class="slider__cardBox__card__colorBox__element__label radio_pink"></label>
+                            </li>
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <input name="color3" type="radio" id="card-3-blue" class="slider__cardBox__card__colorBox__element__radio">
+                                <label for="card-3-blue" class="slider__cardBox__card__colorBox__element__label  radio_blue"></label>
+                            </li>
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <input name="color3" type="radio" id="card-3-gray" class="slider__cardBox__card__colorBox__element__radio">
+                                <label for="card-3-gray" class="slider__cardBox__card__colorBox__element__label  radio_gray"></label>
+                            </li>
+                        </ul>
+                        <input type="checkbox" class="slider__cardBox__card__bay" id="card-3-bay">
+                        <label for="card-3-bay" class="slider__cardBox__card__bayLabel"></label>
+                    </div>
+                    <div class="slider__cardBox__card" id="card-4">
+                        <input type="checkbox" class="slider__cardBox__card__likeCheckbox" id="card-4-like">
+                        <label for="card-4-like" class="slider__cardBox__card__like"> </label>
+                        <img src="img/cardImg/card4.png" alt="" class="slider__cardBox__card__img">
+                        <h4 class="slider__cardBox__card__title">New Balance 247</h4>
+                        <p class="slider__cardBox__card__info">New Balance 247 объединили в себе спортивную эстетику и необходимый в городском ритме комфорт.</p>
+                        <div class="slider__cardBox__card__priseBox">
+                            <p class="slider__cardBox__card__priseBox__prise">10 990 ₽</p>
+                            <p class="slider__cardBox__card__priseBox__discount">12 990 ₽</p>
+                        </div>
+                        <ul class="slider__cardBox__card__colorBox">
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <p class="slider__cardBox__card__element__colorText">Цвет:</p>
+                            </li>
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <input name="color4" type="radio" id="card-4-red" class="slider__cardBox__card__colorBox__element__radio">
+                                <label for="card-4-red" class="slider__cardBox__card__colorBox__element__label radio_red"></label>
+                            </li>
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <input name="color4" type="radio" id="card-4-blue" class="slider__cardBox__card__colorBox__element__radio">
+                                <label for="card-4-blue" class="slider__cardBox__card__colorBox__element__label  radio_blue"></label>
+                            </li>
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <input name="color4" type="radio" id="card-4-orange" class="slider__cardBox__card__colorBox__element__radio">
+                                <label for="card-4-orange" class="slider__cardBox__card__colorBox__element__label  radio_orange"></label>
+                            </li>
+                        </ul>
+                        <input type="checkbox" class="slider__cardBox__card__bay" id="card-4-bay">
+                        <label for="card-4-bay" class="slider__cardBox__card__bayLabel"></label>
+                    </div>
+                    <div class="slider__cardBox__card" id="card-5">
+                        <input type="checkbox" class="slider__cardBox__card__likeCheckbox" id="card-5-like">
+                        <label for="card-5-like" class="slider__cardBox__card__like"> </label>
+                        <img src="img/cardImg/card1.png" alt="" class="slider__cardBox__card__img">
+                        <h4 class="slider__cardBox__card__title">New Balance 840 90s</h4>
+                        <p class="slider__cardBox__card__info">840 90s Running объединили в себе спортивную эстетику и необходимый в городском ритме комфорт.</p>
+                        <div class="slider__cardBox__card__priseBox">
+                            <p class="slider__cardBox__card__priseBox__prise">10 990 ₽</p>
+                            <p class="slider__cardBox__card__priseBox__discount">12 990 ₽</p>
+                        </div>
+                        <ul class="slider__cardBox__card__colorBox">
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <p class="slider__cardBox__card__element__colorText">Цвет:</p>
+                            </li>
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <input name="color5" type="radio" id="card-5-red" class="slider__cardBox__card__colorBox__element__radio">
+                                <label for="card-5-red" class="slider__cardBox__card__colorBox__element__label radio_red"></label>
+                            </li>
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <input name="color5" type="radio" id="card-5-blue" class="slider__cardBox__card__colorBox__element__radio">
+                                <label for="card-5-blue" class="slider__cardBox__card__colorBox__element__label  radio_blue"></label>
+                            </li>
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <input name="color5" type="radio" id="card-5-orange" class="slider__cardBox__card__colorBox__element__radio">
+                                <label for="card-5-orange" class="slider__cardBox__card__colorBox__element__label  radio_orange"></label>
+                            </li>
+                        </ul>
+                        <input type="checkbox" class="slider__cardBox__card__bay" id="card-5-bay">
+                        <label for="card-5-bay" class="slider__cardBox__card__bayLabel"></label>
+                    </div>
+                    <div class="slider__cardBox__card" id="card-6">
+                        <input type="checkbox" class="slider__cardBox__card__likeCheckbox" id="card-6-like">
+                        <label for="card-6-like" class="slider__cardBox__card__like"> </label>
+                        <img src="img/cardImg/card2.png" alt="" class="slider__cardBox__card__img">
+                        <h4 class="slider__cardBox__card__title">New Balance 1500</h4>
+                        <p class="slider__cardBox__card__info">Встречайте новые расцветки бессмертной классики!</p>
+                        <div class="slider__cardBox__card__priseBox">
+                            <p class="slider__cardBox__card__priseBox__prise">13 990 ₽</p>
+                            <p class="slider__cardBox__card__priseBox__discount">19 990 ₽</p>
+                        </div>
+                        <ul class="slider__cardBox__card__colorBox">
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <p class="slider__cardBox__card__element__colorText">Цвет:</p>
+                            </li>
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <input name="color6" type="radio" id="card-6-violet" class="slider__cardBox__card__colorBox__element__radio">
+                                <label for="card-6-violet" class="slider__cardBox__card__colorBox__element__label radio_violet"></label>
+                            </li>
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <input name="color6" type="radio" id="card-6-black" class="slider__cardBox__card__colorBox__element__radio">
+                                <label for="card-6-black" class="slider__cardBox__card__colorBox__element__label  radio_black"></label>
+                            </li>
+                        </ul>
+                        <input type="checkbox" class="slider__cardBox__card__bay" id="card-6-bay">
+                        <label for="card-6-bay" class="slider__cardBox__card__bayLabel"></label>
+                    </div>
+                    <div class="slider__cardBox__card" id="card-7">
+                        <input type="checkbox" class="slider__cardBox__card__likeCheckbox" id="card-7-like">
+                        <label for="card-7-like" class="slider__cardBox__card__like"> </label>
+                        <img src="img/cardImg/card3.png" alt="" class="slider__cardBox__card__img">
+                        <h4 class="slider__cardBox__card__title">New Balance 997H</h4>
+                        <p class="slider__cardBox__card__info">В 1991 году New Balance представил миру модель 997, которая вывела линейку 99X на совершенно новый уровень технологий и эстетики</p>
+                        <div class="slider__cardBox__card__priseBox">
+                            <p class="slider__cardBox__card__priseBox__prise">10 990 ₽</p>
+                            <p class="slider__cardBox__card__priseBox__discount">12 990 ₽</p>
+                        </div>
+                        <ul class="slider__cardBox__card__colorBox">
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <p class="slider__cardBox__card__element__colorText">Цвет:</p>
+                            </li>
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <input name="color7" type="radio" id="card-7-pink" class="slider__cardBox__card__colorBox__element__radio">
+                                <label for="card-7-pink" class="slider__cardBox__card__colorBox__element__label radio_pink"></label>
+                            </li>
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <input name="color7" type="radio" id="card-7-blue" class="slider__cardBox__card__colorBox__element__radio">
+                                <label for="card-7-blue" class="slider__cardBox__card__colorBox__element__label  radio_blue"></label>
+                            </li>
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <input name="color7" type="radio" id="card-7-gray" class="slider__cardBox__card__colorBox__element__radio">
+                                <label for="card-7-gray" class="slider__cardBox__card__colorBox__element__label  radio_gray"></label>
+                            </li>
+                        </ul>
+                        <input type="checkbox" class="slider__cardBox__card__bay" id="card-7-bay">
+                        <label for="card-7-bay" class="slider__cardBox__card__bayLabel"></label>
+                    </div>
+                    <div class="slider__cardBox__card" id="card-8">
+                        <input type="checkbox" class="slider__cardBox__card__likeCheckbox" id="card-8-like">
+                        <label for="card-8-like" class="slider__cardBox__card__like"> </label>
+                        <img src="img/cardImg/card4.png" alt="" class="slider__cardBox__card__img">
+                        <h4 class="slider__cardBox__card__title">New Balance 247</h4>
+                        <p class="slider__cardBox__card__info">New Balance 287 объединили в себе спортивную эстетику и необходимый в городском ритме комфорт.</p>
+                        <div class="slider__cardBox__card__priseBox">
+                            <p class="slider__cardBox__card__priseBox__prise">10 990 ₽</p>
+                            <p class="slider__cardBox__card__priseBox__discount">12 990 ₽</p>
+                        </div>
+                        <ul class="slider__cardBox__card__colorBox">
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <p class="slider__cardBox__card__element__colorText">Цвет:</p>
+                            </li>
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <input name="color8" type="radio" id="card-8-red" class="slider__cardBox__card__colorBox__element__radio">
+                                <label for="card-8-red" class="slider__cardBox__card__colorBox__element__label radio_red"></label>
+                            </li>
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <input name="color8" type="radio" id="card-8-blue" class="slider__cardBox__card__colorBox__element__radio">
+                                <label for="card-8-blue" class="slider__cardBox__card__colorBox__element__label  radio_blue"></label>
+                            </li>
+                            <li class="slider__cardBox__card__colorBox__element">
+                                <input name="color8" type="radio" id="card-8-orange" class="slider__cardBox__card__colorBox__element__radio">
+                                <label for="card-8-orange" class="slider__cardBox__card__colorBox__element__label  radio_orange"></label>
+                            </li>
+                        </ul>
+                        <input type="checkbox" class="slider__cardBox__card__bay" id="card-8-bay">
+                        <label for="card-8-bay" class="slider__cardBox__card__bayLabel"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table-block">
+            <span class="smail">&#128526</span>
+            <h3 class="table-block__title">Время таблиц</h3>
+            <p class="table-block__info">
+            Какой серьезный проект может обойтись без таблиц? Мы не сомневаемся, что ты умеешь их верстать, попробуй реализовать такую таблицу.
+            </p>
+            <table class="table-block__table">
+                <tr class="table-block__table__string string1">
+                    <td class="table-block__table__column column1"></td>
+                    <td class="table-block__table__column column2">
+                        <img class="table-block__table__column__img" src="img/table1.svg" alt="">
+                        <h4 class="table-block__table__column__title">Стандартный</h4>
+                        <p class="table-block__table__column__inform">Это самый стандартный тариф, который подойдет для новых пользователей</p>
+                    </td>
+                    <td class="table-block__table__column column3">
+                        <img class="table-block__table__column__img" src="img/table2.svg" alt="">
+                        <h4 class="table-block__table__column__title">Оптимальный</h4>
+                        <p class="table-block__table__column__inform">Это самый стандартный тариф, который подойдет для новых пользователей</p>
+                    </td>
+                    <td class="table-block__table__column column4">
+                        <img class="table-block__table__column__img" src="img/table3.svg" alt="">
+                        <h4 class="table-block__table__column__title">Премиум</h4>
+                        <p class="table-block__table__column__inform">Это самый стандартный тариф, который подойдет для новых пользователей</p>
+                    </td>
+                </tr>
+                <tr class="table-block__table__string string2">
+                    <td class="table-block__table__column column1">Место на диске</td>
+                    <td class="table-block__table__column column2">1 GB</td>
+                    <td class="table-block__table__column column3">5 GB</td>
+                    <td class="table-block__table__column column4">100 GB</td>
+                </tr>
+                <tr class="table-block__table__string string3">
+                    <td class="table-block__table__column column1">Количество проектов</td>
+                    <td class="table-block__table__column column2">1</td>
+                    <td class="table-block__table__column column3">10</td>
+                    <td class="table-block__table__column column4">∞</td>
+                </tr>
+                <tr class="table-block__table__string string4">
+                    <td class="table-block__table__column column1">Пользователей в проекте</td>
+                    <td class="table-block__table__column column2">2</td>
+                    <td class="table-block__table__column column3">5</td>
+                    <td class="table-block__table__column column4">∞</td>
+                </tr>
+                <tr class="table-block__table__string string5">
+                    <td class="table-block__table__column column1">Интерактивное редактирование</td>
+                    <td class="table-block__table__column column2 columnOff">—</td>
+                    <td class="table-block__table__column column3"><img src="img/onColumn3.svg" alt=""></td>
+                    <td class="table-block__table__column column4"><img src="img/onColumn4.svg" alt=""></td>
+                </tr>
+                <tr class="table-block__table__string string6">
+                    <td class="table-block__table__column column1">Техническая поддержка (в сутки)</td>
+                    <td class="table-block__table__column column2">1 час</td>
+                    <td class="table-block__table__column column3">3 часа</td>
+                    <td class="table-block__table__column column4">12 часов</td>
+                </tr>
+                <tr class="table-block__table__string string7">
+                    <td class="table-block__table__column column1">Премиум ресурсы</td>
+                    <td class="table-block__table__column column2 columnOff">—</td>
+                    <td class="table-block__table__column column3 columnOff">—</td>
+                    <td class="table-block__table__column column4"><img src="img/onColumn4.svg" alt=""></td>
+                </tr>
+                <tr class="table-block__table__string string8">
+                    <td class="table-block__table__column column1">Отключение рекламы</td>
+                    <td class="table-block__table__column column2 columnOff">—</td>
+                    <td class="table-block__table__column column3"><img src="img/onColumn3.svg" alt=""></td>
+                    <td class="table-block__table__column column4"><img src="img/onColumn4.svg" alt=""></td>
+                </tr>
+                <tr class="table-block__table__string string9">
+                    <td class="table-block__table__column column1">Приложения для iOS и Android</td>
+                    <td class="table-block__table__column column2 columnOff">—</td>
+                    <td class="table-block__table__column column3 columnOff">—</td>
+                    <td class="table-block__table__column column4"><img src="img/onColumn4.svg" alt=""></td>
+                </tr>
+            </table>
+        </div>
 
 
 
@@ -124,3 +455,6 @@
     </div>
 </div>
 <script src="/js/main.js"></script>
+    <script src="/js/jquery-3.6.0.js"></script>
+    <script src="/js/plugins/slick/slick.min.js"></script>
+    <script src="js/pludins-main.js"></script>
