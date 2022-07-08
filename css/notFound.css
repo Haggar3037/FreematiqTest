@@ -22,7 +22,8 @@
   margin: 10px auto 0px auto;
 }
 .not-found__button {
-  margin-top: 15px;
+  display: block;
+  margin: 15px auto 0 auto;
   background: #489AFF;
   border-radius: 500px;
   font-weight: 500;
@@ -30,6 +31,11 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding: 14px 31px 12px 31px;
+  padding: 14px 0 12px 0;
+  width: 152px;
   border: none;
+  text-decoration: none;
+}
+.not-found__button:hover {
+  box-shadow: 0 0 3px 1px #489AFF;
 }
